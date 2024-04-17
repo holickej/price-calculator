@@ -1,3 +1,71 @@
+:root {
+    /*colors*/
+    --color-1: #111517;
+    --color-2: #45A1DA;
+    --color-3: #59398E;
+    --color-4: #FFFFFF;
+    --color-5: #000000;
+    /*transitions*/
+    --transition-fast: 200ms;
+    --transition-normal: 500ms;
+    --transition-slow: 1s;
+    /*box*/
+    --box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    --border-radius: 0.55em;
+    /*fonts*/
+    --primary-font: 'Source Sans 3', sans-serif;
+    --font-size-p: clamp(18px, 1.2vw, 1rem);
+    --font-size-h1: clamp(2rem, 5vw, 3rem);
+    --font-size-h2: clamp(1.5rem, 4vw, 2.5rem);
+    --font-size-h2: clamp(1.5rem, 4vw, 2.5rem);
+    --font-size-h3: clamp(1.25rem, 3.5vw, 2rem);
+    /*breakpoints*/
+    --breakpoint-small: 576px;
+    --breakpoint-mobile: 768px;
+    --breakpoint-tablets: 992px;
+    --breakpoint-desktop: 1200px;
+    --breakpoint-big-desktop: 1400px;
+    /*padding*/
+    --body-padding: 5rem 5rem 0rem 10rem;
+    --body-padding-mobile: 4rem 2rem 0rem 4rem;
+    --body-padding-one-side: 10%;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+  html {
+  scroll-behavior: smooth;
+  }
+
+  body {
+    padding: 3%;
+    height: auto;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    font-family: var(--primary-font);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-2);
+    width: fit-content;
+    transition: color .3s ease;
+  }
+  a:hover {
+    color: var(--color-4);
+  }
+  p, a, li {
+    word-break: keep-all;
+    font-size: var(--font-size-p);
+    font-family: var(--primary-font);
+    font-weight: 300;
+  }
+
+  h3.price-estimate {
+    font-size: var(--font-size-h3);
+  }
+
 .price-calculator {
     display: flex;
     flex-wrap: nowrap;
